@@ -1,0 +1,79 @@
+<?php
+  function user_email_form_alter($form, &$form_state, $form_id) {
+    // print '<pre>';
+    // var_dump($form_state);
+    // print '</pre>';
+    //  exit;
+    if($form_id == 'quiz_question_answering_form'){
+      $form['navigation']['skip']['#access'] = false;
+
+  //   if($form_id == 'quiz-question-answering-form'){
+  //
+  //
+  // }
+}
+}
+
+
+// function user_email_quiz_question_answering_form_form_alter($form, &$form_state) {
+//   // If the form has been submitted, output something related to the submission
+//
+//   print '<pre>';
+//   var_dump($form);
+//   print '</pre>';
+//   exit;
+//
+//   if (!empty($form_state['values'])) {
+//
+//
+//     $form['submission'] = array(
+//       '#markup' => function_to_get_markup_from_value($form_state['values']['some_field'])
+//     );
+//   }
+//   else {
+//     // Otherwise build the normal form
+//     $form['some_field'] = array(
+//       '#type' => 'textfield',
+//       // ...
+//     );
+//   }
+//
+//   return $form;
+// }
+// //
+function user_email_form_submit($form, &$form_state) {
+  if($form_id == 'quiz_question_answering_form'){
+
+  print '<pre>';
+  var_dump($form_state);
+  print '</pre>';
+  exit;
+  }
+  // $form_state['rebuild'] = TRUE;
+}
+
+// function my_module_action($form, &$form_state) {
+//   drupal_set_message(t('Challenge Accepted'));
+//   $query = db_insert('challenges')
+//     ->fields(array(
+//     'cid' => '$node->nid',
+//     'uid' => '$user->uid'
+//     ))
+//     ->execute();
+//   $message = array('A new entry has been submitted');
+//   $to = 'example@example.com';
+//   $params = array(
+//     'body' => $body,
+//      'subject' => 'Website Information Request',
+//   );
+//   if (drupal_mail('my_module', 'some_mail_key', $to, language_default(), $params)) {
+//         drupal_set_message('Thanks, email sent.');
+//     } else {
+//         drupal_set_message('Email not sent.');
+//     }
+// }
+
+// function my_module_mail($key, &$message, $params) {
+//   $message['subject'] = $params['subject'];
+//   $message['body'] = $params['body'];
+// }
