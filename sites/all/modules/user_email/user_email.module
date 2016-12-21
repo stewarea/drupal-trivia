@@ -1,9 +1,6 @@
 <?php
   function user_email_form_alter($form, &$form_state, $form_id) {
-    // print '<pre>';
-    //   var_dump($form);
-    //   print '</pre>';
-    //   exit;
+
     if($form_id == 'quiz_question_answering_form'){
       $form['navigation']['skip']['#access'] = false;
 
@@ -15,39 +12,44 @@
 }
 
 
-// function user_email_quiz_question_answering_form_form_alter($form, &$form_state, $node, $result_id) {
+// function user_email_form_submit($form, &$form_state) {
 //   // If the form has been submitted, output something related to the submission
-//
-//
-//
-//   if (!empty($form_state['values'])) {
-//
-//
-//     $form['submission'] = array(
-//       '#markup' => function_to_get_markup_from_value($form_state['values']['some_field'])
-//     );
+//   if($form_id == 'quiz_question_answering_form') {
+//     print '<pre>';
+//     var_dump($form);
+//     print '</pre>';
+//     exit;
 //   }
-//   else {
-//     // Otherwise build the normal form
-//     $form['some_field'] = array(
-//       '#type' => 'textfield',
-//       // ...
-//     );
-//   }
-//
-//   return $form;
-// }
-// //
-function user_email_form_submit($form, &$form_state) {
-  if($form_id == 'quiz_question_answering_form'){
 
-  print '<pre>';
-  var_dump($form_state);
-  print '</pre>';
-  exit;
-  }
-  // $form_state['rebuild'] = TRUE;
-}
+
+  // if (!empty($form_state['values'])) {
+  //
+  //
+  //   $form['submission'] = array(
+  //     '#markup' => function_to_get_markup_from_value($form_state['values']['some_field'])
+  //   );
+  // }
+  // else {
+  //   // Otherwise build the normal form
+  //   $form['some_field'] = array(
+  //     '#type' => 'textfield',
+  //     // ...
+  //   );
+  // }
+  //
+  // return $form;
+
+// //
+// function user_email_form_submit($form, &$form_state) {
+//   if($form_id == 'quiz_question_answering_form'){
+//
+//   print '<pre>';
+//   var_dump($form_state);
+//   print '</pre>';
+//   exit;
+//   }
+//   // $form_state['rebuild'] = TRUE;
+// }
 
 // function my_module_action($form, &$form_state) {
 //   drupal_set_message(t('Challenge Accepted'));
