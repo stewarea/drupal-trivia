@@ -67,6 +67,11 @@
 <div id="wrap" class="clr container">
   <div id="header-wrap" class="clr">
     <header id="header" class="site-header clr">
+      <div class="hand">
+        <a href="/">
+          <img src="http://www.symbols.com/gi.php?type=1&id=1957">
+        </a>
+      </div>
       <div id="logo" class="clr">
         <?php if (theme_get_setting('image_logo','blogger_theme')): ?>
         <?php if ($logo): ?><div class="site-img-logo clr"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">

@@ -1,3 +1,11 @@
 body {
-  background-color: #02aace;
+  background-image: url(https://images2.alphacoders.com/261/26102.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hand {
+
+  height: 70px;
+  width: 90px;
 }

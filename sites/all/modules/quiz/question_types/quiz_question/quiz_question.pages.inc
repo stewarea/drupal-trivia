@@ -69,6 +69,7 @@ function quiz_question_revision_actions_form($form, $form_state, $question_node)
       );
     }
   }
+  
 
   $form['submit'] = array(
     '#type' => 'submit',
