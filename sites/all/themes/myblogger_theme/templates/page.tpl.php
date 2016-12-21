@@ -74,11 +74,12 @@
         </a></div><?php endif; ?>
         <?php else: ?>
         <div class="site-text-logo clr">
-          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
+          <p><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></p>
           <?php if ($site_slogan): ?><div class="blog-description"><?php print $site_slogan; ?></div><?php endif; ?>
         </div>
         <?php endif; ?>
       </div>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     </header>
     <?php if ($page['search_block']): ?>
       <aside id="header-aside" class="clr">
@@ -86,13 +87,13 @@
       </aside>
     <?php endif; ?>
   </div>
-      
+
   <div id="site-navigation-wrap">
     <div id="sidr-close"><a href="#sidr-close" class="toggle-sidr-close"></a></div>
     <nav id="site-navigation" class="navigation main-navigation clr" role="navigation">
       <a href="#sidr-main" id="navigation-toggle"><span class="fa fa-bars"></span>Menu</a>
       <div id="main-menu" class="menu-main-container">
-        <?php 
+        <?php
           $main_menu_tree = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
           print drupal_render($main_menu_tree);
         ?>
@@ -132,7 +133,7 @@
       <section id="content" role="main" class="site-content <?php print $sidebarclass; ?> clr">
         <?php if ($is_front): ?>
         <?php if (theme_get_setting('slideshow_display','blogger_theme')): ?>
-        <?php 
+        <?php
           $slide1_head = check_plain(theme_get_setting('slide1_head','blogger_theme'));   $slide1_desc = check_markup(theme_get_setting('slide1_desc','blogger_theme'), 'full_html'); $slide1_url = check_plain(theme_get_setting('slide1_url','blogger_theme'));
           $slide2_head = check_plain(theme_get_setting('slide2_head','blogger_theme'));   $slide2_desc = check_markup(theme_get_setting('slide2_desc','blogger_theme'), 'full_html'); $slide2_url = check_plain(theme_get_setting('slide2_url','blogger_theme'));
           $slide3_head = check_plain(theme_get_setting('slide3_head','blogger_theme'));   $slide3_desc = check_markup(theme_get_setting('slide3_desc','blogger_theme'), 'full_html'); $slide3_url = check_plain(theme_get_setting('slide3_url','blogger_theme'));
@@ -189,7 +190,7 @@
               </ul>
             </div>
           </div>
-        </div>     
+        </div>
         <?php endif; ?>
         <?php endif; ?>
 
@@ -210,12 +211,12 @@
       <?php if ($page['sidebar_first']): ?>
         <aside id="secondary" class="sidebar-container" role="complementary">
          <?php print render($page['sidebar_first']); ?>
-        </aside> 
+        </aside>
       <?php endif; ?>
     </div>
   </div>
 
-  
+
   <footer id="footer-wrap" class="site-footer clr">
     <?php if ($page['footer_first'] || $page['footer_second'] || $page['footer_third']  || $page['footer']): ?>
     <div id="footer" class="clr">
@@ -232,7 +233,7 @@
           </div><?php endif; ?>
         </div>
       <?php endif; ?>
-      
+
       <?php if ($page['footer']): ?>
         <div class="span_1_of_1 col col-1">
           <?php print render($page['footer']); ?>
