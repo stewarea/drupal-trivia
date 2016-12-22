@@ -19,10 +19,10 @@ transform: rotate(360deg);
 .site-text-logo a {
   padding-left: 20px;
   padding-right: 20px;
-    width: 100%; height: 200%;
-    background-size: 100% 200%;
-    background-image: linear-gradient(to bottom, white 50%, #02aace 50%);
-    transition: background-position .7s;
+  width: 100%; height: 200%;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, white 50%, #02aace 50%);
+  transition: background-position .7s;
 }
 
 .site-text-logo a:hover {
@@ -38,6 +38,7 @@ body h2, h3{
   font-family: 'Dekko', cursive;
 }
 
-/*.field-item a:hover {
-  box-shadow: black;
-}*/
+.field-item img {
+  min-width: 500px;
+
+}
