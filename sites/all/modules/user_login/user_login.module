@@ -1,0 +1,18 @@
+<?php
+function user_login_menu() {
+    $items['home'] = array(
+        'page callback' => 'welcome_user',
+        'access callback' => TRUE,
+        'type' => MENU_CALLBACK,
+    );
+    return $items;
+}
+
+function user_login_user_login(&$edit, $account) {
+    $_GET['destination'] = 'home';
+
+}
+
+function welcome_user() {
+    
+}

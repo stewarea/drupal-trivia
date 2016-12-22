@@ -68,7 +68,7 @@
   <div id="header-wrap" class="clr">
     <header id="header" class="site-header clr">
       <div class="hand">
-        <a href="/">
+        <a href="/home">
           <img src="http://www.symbols.com/gi.php?type=1&id=1957">
         </a>
       </div>
@@ -79,7 +79,7 @@
         </a></div><?php endif; ?>
         <?php else: ?>
         <div class="site-text-logo clr">
-          <p><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></p>
+          <p><a href="/home" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></p>
           <?php if ($site_slogan): ?><div class="blog-description"><?php print $site_slogan; ?></div><?php endif; ?>
         </div>
         <?php endif; ?>

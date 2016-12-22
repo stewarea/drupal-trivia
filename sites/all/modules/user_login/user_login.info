@@ -1,0 +1,5 @@
+name = User login
+description = redirects users on log in to Home
+core = 7.x
+packages = My modules
+files[] = user_login.module
