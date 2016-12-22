@@ -1,5 +1,5 @@
 body {
-  background: url(https://images2.alphacoders.com/261/26102.jpg) center center;
+  background: url(http://m0.i.pbase.com/g9/31/628831/2/157180320.pjhzrEEO.jpg) center center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -8,6 +8,12 @@ body {
 .hand {
   height: 70px;
   width: 90px;
+ transition: all 1s;
+ transition-timing: ease-in-out;
+ width: 100px;
+}
+.hand:hover {
+transform: rotate(360deg);
 }
 
 .site-text-logo a {
@@ -21,5 +27,17 @@ body {
 
 .site-text-logo a:hover {
     color: black;
-    background-position: 0 75%;
+    background-position: 0 90%;
+
 }
+
+body h1{
+  font-family: 'Gloria Hallelujah', cursive;
+}
+body h2, h3{
+  font-family: 'Dekko', cursive;
+}
+
+/*.field-item a:hover {
+  box-shadow: black;
+}*/

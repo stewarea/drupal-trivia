@@ -84,7 +84,7 @@
         </div>
         <?php endif; ?>
       </div>
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dekko|Gloria+Hallelujah" rel="stylesheet">
     </header>
     <?php if ($page['search_block']): ?>
       <aside id="header-aside" class="clr">
